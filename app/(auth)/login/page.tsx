@@ -200,7 +200,7 @@ export default function LoginPage() {
             borderRight: `1px solid ${T.border}`,
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             padding: '40px 48px',
           }}
         >
@@ -239,7 +239,18 @@ export default function LoginPage() {
             }}
           />
 
-          <Link href="/" className="lx-panel-content" style={{ ...row(12), textDecoration: 'none', position: 'relative', zIndex: 1 }}>
+          <Link
+              href="/"
+              className="lx-panel-content"
+              style={{
+                ...row(12),
+                textDecoration: 'none',
+                position: 'absolute',
+                top: 40,
+                left: 48,
+                zIndex: 2,
+              }}
+            >
             <div
               style={{
                 width: 42,
